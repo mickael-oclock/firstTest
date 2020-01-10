@@ -1,0 +1,5 @@
+easy_admin:
+    entities:
+        Promo:
+            class: App\Entity\Promo
+       

@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "symfo",
+            "dialect": "MariaDB",
+            "isActive": true,
+            "isConnected": true,
+            "name": "loal",
+            "password": "1234",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}

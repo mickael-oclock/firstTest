@@ -7,3 +7,4 @@
 
 imports:
     - { resource: easy_admin/ }
+    - { resource: easy_admin/entities}
