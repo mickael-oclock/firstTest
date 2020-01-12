@@ -1,0 +1,5 @@
+easy_admin:
+    entities:
+        Students:
+            class: App\Entity\Student
+            list: ["import"]

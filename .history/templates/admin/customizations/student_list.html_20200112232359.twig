@@ -1,0 +1,11 @@
+{% extends '@EasyAdmin/default/list.html.twig' %}
+
+{% block new_action %}
+{{ parent() }}
+<div class="button-action">
+                <a class="upload_btn" href="{{ path('easyadmin', _request_parameters|merge({ action: 'upload' })) }}">
+                    <i class="fa fa-fw fa-upload"></i>
+                    {{'action.upload'|trans() }}
+                </a>
+            </div>
+               {% endblock new_action %}

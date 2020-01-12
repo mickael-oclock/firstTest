@@ -41,6 +41,26 @@ class Student
      */
     private $userGithub;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $mobile;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $sellsyId;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $civility;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $videoConfessionalUrl;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -102,6 +122,54 @@ class Student
     public function setUserGithub(string $userGithub): self
     {
         $this->userGithub = $userGithub;
+
+        return $this;
+    }
+
+    public function getMobile(): ?string
+    {
+        return $this->mobile;
+    }
+
+    public function setMobile(?string $mobile): self
+    {
+        $this->mobile = $mobile;
+
+        return $this;
+    }
+
+    public function getSellsyId(): ?int
+    {
+        return $this->sellsyId;
+    }
+
+    public function setSellsyId(int $sellsyId): self
+    {
+        $this->sellsyId = $sellsyId;
+
+        return $this;
+    }
+
+    public function getCivility(): ?string
+    {
+        return $this->civility;
+    }
+
+    public function setCivility(string $civility): self
+    {
+        $this->civility = $civility;
+
+        return $this;
+    }
+
+    public function getVideoConfessionalUrl(): ?string
+    {
+        return $this->videoConfessionalUrl;
+    }
+
+    public function setVideoConfessionalUrl(string $videoConfessionalUrl): self
+    {
+        $this->videoConfessionalUrl = $videoConfessionalUrl;
 
         return $this;
     }

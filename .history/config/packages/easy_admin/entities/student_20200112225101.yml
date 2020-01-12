@@ -4,5 +4,3 @@ easy_admin:
             class: App\Entity\Student
             list:
                 actions: ["import"]
-            templates:
-                list: 'admin/customizations/student_list.html.twig'
